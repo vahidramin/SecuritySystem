@@ -1,0 +1,360 @@
+
+@import url(fontiran.css);
+
+body {
+    margin: 0;
+}
+.horizontal-line-orange {
+    height: 5px;
+    background-color: #ed791c;
+}
+
+div#export-excel {
+	display: none;
+}
+div#filter-form {
+	display: none;
+}
+
+div#filter-form-sarfasl {
+	display: none;
+}
+
+.header {
+    height: 85px;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+
+.menubar {
+    height: 20px;
+    background-color: #0080ec;
+}
+
+.header-right {
+    margin: 0;
+    float: right;
+    display: inline-block;
+    width: 550px;
+    height: 85px;
+}
+
+.header-right > * {
+    float: right;
+}
+
+.header-left {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    width: 500px;
+    height: 85px;
+}
+
+#app-title {
+    height: 85px;
+    line-height: 85px;
+    font-family: IRANSans;
+    font-size: 20px;
+    color: darkblue;
+}
+
+#current-date {
+    font-family: IRANSans;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 25px;
+	direction: rtl;
+}
+
+#link-requests {
+    background: url('../images/button-request.png') no-repeat 100% 50%;
+}
+
+#extra-links {
+    text-align: center;
+    direction: rtl;
+}
+
+#extra-links > a:link, #extra-links > a:visited {
+    text-align: right;
+    padding: 5px 30px;
+    text-decoration: none;
+    margin-left: 30px;
+    line-height: 65px;
+    font-family: IRANSans;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#extra-links > a:hover, #extra-links > a:active {
+    border-bottom: 1px solid #888;
+}
+
+#link-profile {
+    background: url('../images/button-profile.png') no-repeat 100% 50%;
+}
+
+#link-exit {
+    background: url('../images/button-exit.png') no-repeat 100% 50%;
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    position: absolute;
+    z-index: 10;
+    height: 38px;
+    bottom: 0px;
+    border-top: 1px solid #ff4e00;
+    width: 100%;
+    font-family: IRANSans;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: right;
+    direction: rtl;
+    padding: 0;
+    color: #555;
+}
+
+footer img {
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+main {
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    background: url('../images/iran-blank-map.png') no-repeat 50% 50%;
+    background-attachment: fixed;
+}
+
+#reports-tab {
+    display: inline-block;
+    width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    vertical-align: top;
+    direction: rtl;
+    border-right: 2px solid #0080ec;
+}
+
+#reports-body {
+    display: inline-block;
+    overflow: auto;
+    vertical-align: top;
+    direction: ltr;
+}
+
+.tab-item {
+    display: block;
+    clear: both;
+    background-color: #003990;
+    color: #c0c0c0;
+    font-family: IRANSans;
+    font-size: 11px;
+    margin: 0 6px 2px auto;
+    text-decoration: none;
+    padding: 1px 5px;
+    width: 110px;
+    min-height: 30px;
+}
+
+.tab-select {
+    color: rgb(255, 255, 255);
+    margin-right: 0px;
+    width: 116px;
+    background-color: rgb(176, 0, 167);
+}
+
+.tab-item:hover {
+    color:#f5f5f5;
+    cursor: pointer;
+}
+
+.tab-item img {
+    float: left;
+    width: 18px;
+    display: none;
+}
+
+.tab-item:hover img {
+    display: inline;
+}
+.report-item {
+    margin: 3px auto;
+    min-width: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    direction: rtl;
+
+}
+
+.report-title {
+    margin: 0 auto;
+    padding: 10px;
+    direction: rtl;
+    text-align: center;
+    font-family: IRANSans;
+    font-size: 16px;
+    color: brown;
+    background-color: rgba(255, 222, 172, 0.75);
+}
+.report-title > div {
+    margin: 0 auto;
+    direction: rtl;
+    text-align: center;
+    font-family: IRANSans;
+    font-size: 14px;
+    color: gray;
+}
+
+.report-title > div > a:link, .report-title > div > a:visited  {
+    text-decoration: none;
+}
+
+.report-title > div > a:hover, .report-title > div > a:active  {
+    text-decoration: underline;
+}
+
+.report-table {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.report-table > img {
+    margin: 10px auto;
+	width: 62px;
+	height: 64px;
+}
+
+.report-table > table {
+    margin: 0 auto;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0px 0px;
+    border: 2px solid gray;
+	min-width: 75%;
+}
+
+.report-table > table tr {
+    padding: 0;
+    margin: 0;
+}
+
+.report-table > table tr:nth-child(2n) {
+    background-color: rgba(230, 230, 230, 0.6)
+}
+
+.report-table > table tr td {
+    margin: 0;
+    padding: 8px 3px;
+    min-height: 30px;
+    min-width: 40px;
+    line-height: 20px;
+    border: 2px solid #aaa;
+    font-family: IRANSans, tahoma;
+    font-size: 12px;
+}
+
+.report-table > table tr td.amount {
+    width: 115px;
+}
+
+.report-table > table tr:nth-child(n+2) td:last-child {
+    background-color: rgb(223, 245, 255);
+}
+
+.report-table > table tr.rowsum td, .report-table > table tr.rowsum td:last-child {
+    background-color: rgb(78, 211, 255);
+}
+
+.report-table > table tr.titleRow td, .report-table > table tr.titleRow td:last-child {
+    background-color: rgba(0, 255, 48, 0.25);
+	border-bottom: 2px solid #333;
+	cursor: pointer;
+}
+
+.report-table > table tr.midsumRow td, .report-table > table tr.midsumRow td:last-child {
+    background-color: rgba(0, 255, 48, 0.25);
+	border-bottom: 2px solid #333;
+	cursor: pointer;
+}
+
+.report-table > table tr td span {
+    float: right;
+}
+.report-table > table tr td span.green {
+    color: green;
+    direction: ltr;
+}
+
+.report-table > table tr td span.red {
+    color: firebrick;
+    direction: ltr;
+}
+
+.report-table > table tr.rowsum td span.red {
+	font-weight: 900;
+    color: #ff1e1e;
+}
+
+.report-table > table tr.rowsum td span.green {
+	font-weight: 900;
+    color: #007020;
+}
+
+.tableHead {
+    background-color: #3861ab;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tableHead td {
+    text-align: center;
+}
+
+.report-form {
+    min-height: 40px;
+    background-color: rgba(213, 213, 213, 0.7);
+    border-bottom: 2px solid #4b5c69;
+    border-top: 2px solid #4b5c69;
+    margin: 2px 0;
+    direction: rtl;
+    text-align: center;
+    line-height: 40px;
+    font-family: IRANSans;
+    font-size: 11px;
+}
+
+.report-form > * {
+    margin: 0 10px;
+}
+
+.report-form * {
+    font-family: IRANSans;
+    font-size: 11px;
+}
+
+.report-form > select, .report-form > span, .report-form > input {
+    display: none;
+}
+
+.report-form > select.level {
+    display: inline;
+}
+
+.report-form img.excel-export {
+    height: 32px;
+	width: 32px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.report-query {
+	font-size: 11px;
+	font-family: verdana;
+	padding: 10px;
+}
